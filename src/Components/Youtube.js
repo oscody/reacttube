@@ -1,11 +1,10 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import YoutubeList from "./YoutubeList";
 
-
-console.log('Test Keys',process.env.REACT_APP_API_KEY)
+//console.log("Test Keys", process.env.REACT_APP_API_KEY);
 
 var apiKey = process.env.REACT_APP_API_KEY;
-
 
 var api = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3/",
@@ -13,13 +12,12 @@ var api = axios.create({
     part: "snippet",
     maxResults: 10,
     key: apiKey,
+    order: "viewCount",
   },
 });
 
 export default function Youtube() {
   const [video, setData] = useState([]);
-
-  //const [term, setSearch] = useState([]);
 
   const handleChange = (event) => {
     console.log("event", event.target.value);
@@ -29,7 +27,7 @@ export default function Youtube() {
   };
 
   async function gettingData(termFromSearchBar) {
-    console.log("searchbar", termFromSearchBar);
+    console.log("videoCategories", termFromSearchBar);
 
     api
       .get("/search", {
@@ -48,21 +46,9 @@ export default function Youtube() {
 
       <input onBlur={handleChange} name="video-search" type="text" />
 
-      <button onClick={(e) => gettingData('Default')}>search</button>
-
-      {video.map((item, i) => {
-        return (
-          <div key={i}>
-            <p>{item.snippet.title + "-" + item.snippet.publishTime}</p>
-            <img
-              src={item.snippet.thumbnails.medium.url}
-              alt={item.snippet.description}
-            />
-            <p>{item.snippet.channelTitle}</p>
-            <hr></hr>
-          </div>
-        );
-      })}
+      <button onClick={(e) => gettingData(e)}>search</button>
+      <hr></hr>
+      <YoutubeList video={video}></YoutubeList>
     </>
   );
 }
