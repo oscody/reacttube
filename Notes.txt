@@ -1,0 +1,30 @@
+
+
+https://developers.google.com/youtube/v3/docs/search/list
+
+#https://www.youtube.com/playlist?list=PLqUX34SwGksRZHcVE2eGtxW8C0xcwEtkA
+
+
+#YouTube Data API search by hashtag
+https://stackoverflow.com/questions/36950955/youtube-api-v3-hashtag-search-bad-results
+
+
+https://axios-http.com/docs/handling_errors
+
+#how to create a axois object
+
+https://www.digitalocean.com/community/tutorials/react-axios-react
+https://www.freecodecamp.org/news/how-to-use-axios-with-react/#how-to-create-an-axios-instance
+https://blog.logrocket.com/understanding-axios-create/
+
+#reusable axios component
+
+https://stackoverflow.com/questions/70116072/react-js-creating-a-reusable-component-to-get-api-data
+
+https://codesandbox.io/s/long-frost-qziu4?file=/src/App.js:366-369
+
+https://dev.to/rikurouvila/clean-and-reusable-data-fetching-in-react-components-165
+
+https://stackoverflow.com/questions/70996018/create-a-component-for-axios-that-can-be-used-in-different-places-with-different
+
+https://stackoverflow.com/questions/46249964/how-to-write-a-reusable-component-for-axios-get-and-axios-post
