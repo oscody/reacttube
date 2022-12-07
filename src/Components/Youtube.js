@@ -10,7 +10,7 @@ var api = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3/",
   params: {
     part: "snippet",
-    maxResults: 10,
+    maxResults: 1,
     key: apiKey,
     order: "viewCount",
   },
@@ -27,7 +27,7 @@ export default function Youtube() {
   };
 
   async function gettingData(termFromSearchBar) {
-    console.log("videoCategories", termFromSearchBar);
+    ///console.log("videoCategories", termFromSearchBar);
 
     api
       .get("/search", {

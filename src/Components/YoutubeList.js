@@ -2,7 +2,7 @@ import React from "react";
 import YoutubeInfo from "./YoutubeInfo";
 
 const YoutubeList = (props) => {
-  console.log("YoutubeView", props.video);
+  console.log("YoutubeList", props.video);
   return (
     <>
       <div>Youtube</div>

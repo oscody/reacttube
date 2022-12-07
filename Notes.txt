@@ -2,7 +2,9 @@
 
 https://developers.google.com/youtube/v3/docs/search/list
 
-#https://www.youtube.com/playlist?list=PLqUX34SwGksRZHcVE2eGtxW8C0xcwEtkA
+https://www.youtube.com/playlist?list=PLqUX34SwGksRZHcVE2eGtxW8C0xcwEtkA
+
+https://github.com/anarsultani97/modern-react-redux
 
 
 #YouTube Data API search by hashtag
