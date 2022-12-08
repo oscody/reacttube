@@ -4,9 +4,9 @@ import YoutubeList from "./YoutubeList";
 
 //console.log("Test Keys", process.env.REACT_APP_API_KEY);
 
-var apiKey = process.env.REACT_APP_API_KEY;
+let apiKey = process.env.REACT_APP_API_KEY;
 
-var api = axios.create({
+let api = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3/",
   params: {
     part: "snippet",

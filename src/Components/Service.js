@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-var apiKey = process.env.REACT_APP_API_KEY;
+let apiKey = process.env.REACT_APP_API_KEY;
 
 const Service = (part) => {
     axios.create({

@@ -7,8 +7,8 @@ const YoutubeList = (props) => {
     <>
       <div>Youtube</div>
 
-      {props.video.map((item, i) => {
-        return (
+      {props.video.map((item, i) => 
+        (
           <div key={i}>
             <p>{item.snippet.title + "-" + item.snippet.publishTime}</p>
             <img
@@ -19,8 +19,8 @@ const YoutubeList = (props) => {
             <YoutubeInfo videoID={item.id}></YoutubeInfo>
             <hr></hr>
           </div>
-        );
-      })}
+        )
+      )}
 
       
     </>
